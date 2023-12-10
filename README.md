@@ -1,6 +1,6 @@
 # Library_Management_System_Letsbloom_Assignment
 
-This project implements a simple RESTful API for managing a library system using Node.js, Express, and MongoDB with Mongoose.
+This project implements a simple RESTful API for managing a library system using Django and PostgreSQL
 
 ## Setup Instructions
 
