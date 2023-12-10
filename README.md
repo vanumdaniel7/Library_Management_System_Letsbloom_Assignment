@@ -52,14 +52,12 @@ This project implements a simple RESTful API for managing a library system using
 2. The server will start running on `http://localhost:8000` by default.
 
 ### API Endpoints
-```javascript
-{ "some": "json" }
-```
+
 | Endpoint            | HTTP Method | CRUD Method | Result                | Payload                                      |
 | ------------------- | ----------- | ----------- | --------------------- | -------------------------------------------- |
 | `/api/books`        | GET         | READ        | Get all books         | No payload                                   |
-| `/api/books`        | POST        | CREATE      | Create a new book     | ```javascript {"name": "danie"}```
-| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | 
+| `/api/books`        | POST        | CREATE      | Create a new book     | Refer documentation.pdf                      |
+| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | Refer documentation.pdf                      |
 
 
 ## Usage
