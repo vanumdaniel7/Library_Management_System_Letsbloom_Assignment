@@ -58,8 +58,8 @@ This project implements a simple RESTful API for managing a library system using
 | Endpoint            | HTTP Method | CRUD Method | Result                | Payload                                      |
 | ------------------- | ----------- | ----------- | --------------------- | -------------------------------------------- |
 | `/api/books`        | GET         | READ        | Get all books         | No payload                                   |
-| `/api/books`        | POST        | CREATE      | Create a new book     | ```json\n{ "title": "Example", "author": "Author", "edition": 1, "publication": "Pub", "publisher": "Publisher", "language": "English", "publicationDate": "2023-01-01", "numberOfCopies": 10 }``` |
-| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | ```json\n{ "title": "Updated Example", "author": "New Author", "edition": 2, "publication": "Updated Pub", "publisher": "Updated Publisher", "language": "Spanish", "publicationDate": "2023-12-31", "numberOfCopies": 15 }``` |
+| `/api/books`        | POST        | CREATE      | Create a new book     | ```javascript {"name": "danie"}```
+| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | 
 
 
 ## Usage
