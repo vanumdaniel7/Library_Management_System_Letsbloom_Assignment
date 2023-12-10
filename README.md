@@ -53,14 +53,11 @@ This project implements a simple RESTful API for managing a library system using
 
 ### API Endpoints
 
-- **Retrieve All Books**
-  - `GET /api/books`
-- **Add a New Book**
-  - `POST /api/books`
-  - Request Body: JSON object representing the new book.
-- **Update Book Details**
-  - `PUT /api/books/{id}`
-  - Request Body: JSON object with updated book details.
+Endpoint |HTTP Method | CRUD Method | Result
+-- | -- |-- |--
+`/api/books` | GET | READ | Get all books
+`/api/books` | POST | CREATE | Create a new book
+`/api/books/{id}`| PUT | UPDATE | Update a movie
 
 ## Usage
 
