@@ -62,7 +62,7 @@ This project implements a simple RESTful API for managing a library system using
 
 ## Usage
 
-- Use tools like Postman or cURL to make requests to the provided endpoints.
+- Use tools like Postman or CURL to make requests to the provided endpoints.
 - For example:
   - Retrieve all books: `GET http://localhost:8000/api/books`
   - Add a book: `POST http://localhost:8000/api/books` with a JSON payload.
