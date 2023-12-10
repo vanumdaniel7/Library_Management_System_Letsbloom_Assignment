@@ -1,6 +1,8 @@
-# Library_Management_System_Letsbloom_Assignment
+# Letsbloom Assignment - Library Management System
 
-This project implements a simple RESTful API for managing a library system using Django and PostgreSQL
+This project implements a simple RESTful API for managing a library system using Django and PostgreSQL.
+
+Please refer to Documentation.pdf for more details
 
 ## Setup Instructions
 
@@ -51,7 +53,7 @@ This project implements a simple RESTful API for managing a library system using
 
 2. The server will start running on `http://localhost:8000` by default.
 
-### API Endpoints
+### API Endpoints (Refer to Documentation.pdf for more details)
 
 | Endpoint            | HTTP Method | CRUD Method | Result                | Payload(request body)                        |
 | ------------------- | ----------- | ----------- | --------------------- | -------------------------------------------- |
