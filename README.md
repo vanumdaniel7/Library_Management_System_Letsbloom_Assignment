@@ -81,4 +81,4 @@ where updatePayload and createPayload are of the format
 - For example:
   - Retrieve all books: `GET http://localhost:8000/api/books`
   - Add a book: `POST http://localhost:8000/api/books` with a JSON payload.
-  - Update a book: `PUT http://localhost:8000/api/books/{book_id}` with a JSON payload.
+  - Update a book: `PUT http://localhost:8000/api/books/{id}` with a JSON payload.
