@@ -7,7 +7,7 @@ This project implements a simple RESTful API for managing a library system using
 ### Prerequisites
 
 - Python installed
-- PostgreSQL server installed and running
+- PostgreSQL server installed and running or you can use a remote PostgreSQL server.
 
 ### Installation Steps
 
