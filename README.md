@@ -53,11 +53,11 @@ This project implements a simple RESTful API for managing a library system using
 
 ### API Endpoints
 
-Endpoint |HTTP Method | CRUD Method | Result
--- | -- |-- |--
-`/api/books` | GET | READ | Get all books
-`/api/books` | POST | CREATE | Create a new book
-`/api/books/{id}`| PUT | UPDATE | Update a movie
+Endpoint |HTTP Method | CRUD Method | Result | Payload
+-- | -- |-- |-- |--
+`/api/books` | GET | READ | Get all books | No payload
+`/api/books` | POST | CREATE | Create a new book | Check documentation.pdf
+`/api/books/{id}`| PUT | UPDATE | Update a movie | Check documentation.pdf
 
 ## Usage
 
