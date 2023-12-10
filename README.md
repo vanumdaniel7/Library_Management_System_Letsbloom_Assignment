@@ -56,8 +56,26 @@ This project implements a simple RESTful API for managing a library system using
 Endpoint |HTTP Method | CRUD Method | Result | Payload
 -- | -- |-- |-- |--
 `/api/books` | GET | READ | Get all books | No payload
-`/api/books` | POST | CREATE | Create a new book | Check documentation.pdf
-`/api/books/{id}`| PUT | UPDATE | Update a movie | Check documentation.pdf
+`/api/books` | POST | CREATE | Create a new book | {
+    "title": "(str) - The title of the book, required",
+    "author": "(str) - The author of the book, required",
+    "edition": "(int) - The edition of the book, required",
+    "publication": "(str) - The publication name, required",
+    "publisher": "(str) - The publisher of the book, required",
+    "language": "(str) - The language of the book, required",
+    "publicationDate": "(str) - The publication date of the book (YYYY-MM-DD), required",
+    "numberOfCopies": "(int) - The number of copies available, required"
+}
+`/api/books/{id}`| PUT | UPDATE | Update a movie | {
+    "title": "(str) - The title of the book, required",
+    "author": "(str) - The author of the book, required",
+    "edition": "(int) - The edition of the book, required",
+    "publication": "(str) - The publication name, required",
+    "publisher": "(str) - The publisher of the book, required",
+    "language": "(str) - The language of the book, required",
+    "publicationDate": "(str) - The publication date of the book (YYYY-MM-DD), required",
+    "numberOfCopies": "(int) - The number of copies available, required"
+}
 
 ## Usage
 
