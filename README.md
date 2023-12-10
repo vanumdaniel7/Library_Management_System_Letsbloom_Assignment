@@ -17,7 +17,7 @@ This project implements a simple RESTful API for managing a library system using
    git clone https://github.com/vanumdaniel7/Library_Management_System_Letsbloom_Assignment
    ```
 
-2. After you cloned the repository, you have to create a virtual environment.
+2. After you cloned the repository go inside the project directory, and create a virtual environment.
    
    ```powershell
    py -m env .venv
