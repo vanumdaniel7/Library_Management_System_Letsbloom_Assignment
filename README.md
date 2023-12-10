@@ -56,7 +56,7 @@ This project implements a simple RESTful API for managing a library system using
 Endpoint |HTTP Method | CRUD Method | Result | Payload
 -- | -- |-- |-- |--
 `/api/books` | GET | READ | Get all books | No payload
-`/api/books` | POST | CREATE | Create a new book | ```json\n{
+`/api/books` | POST | CREATE | Create a new book | ```json\n{"a": "b"}
     "title": "(str) - The title of the book, required",
     "author": "(str) - The author of the book, required",
     "edition": "(int) - The edition of the book, required",
