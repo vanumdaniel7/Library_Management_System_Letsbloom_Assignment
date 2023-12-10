@@ -1,3 +1,4 @@
+from re import compile
 from json import loads
 from server.models import Book
 from django.http import JsonResponse
@@ -32,6 +33,13 @@ def bookCreateReadAPIView(
         if request.method == "POST":
             try:
                 data = loads(request.body)
+
+                if bool(compile(r'^\d{4}-\d{2}-\d{2}$').match(data["publicationDate"])) == False:
+                    return JsonResponse({
+                        "status": "error",
+                        "info": f"Date should be YYYY-MM-DD format",
+                    }, status = 400)
+                
                 serializer = BookSerializer(data = data)
 
                 if serializer.is_valid():
@@ -45,7 +53,7 @@ def bookCreateReadAPIView(
                 else:
                     # Raising an error if the request payload is invalid.
                     raise serializers.ValidationError(
-                        detail = '; '.join('; '.join(errors) for errors in serializer.errors.values())
+                        detail = '; '.join('; '.join(f"{error} for {name}" for error in errors) for name, errors in serializer.errors.items())
                     )
                 
             except serializers.ValidationError as e:
@@ -86,6 +94,13 @@ def bookUpdateAPIView(
         if request.method == "PUT":
             try:
                 data = loads(request.body)
+
+                if bool(compile(r'^\d{4}-\d{2}-\d{2}$').match(data["publicationDate"])) == False:
+                    return JsonResponse({
+                        "status": "error",
+                        "info": f"Date should be YYYY-MM-DD format",
+                    }, status = 400)
+                
                 book = Book.objects.get(bookId = bookId)
                 serializer = BookSerializer(book, data = data)
                 if serializer.is_valid():
@@ -98,7 +113,7 @@ def bookUpdateAPIView(
                 
                 else:
                     raise serializers.ValidationError(
-                        detail = '; '.join('; '.join(errors) for errors in serializer.errors.values())
+                        detail = '; '.join('; '.join(f"{error} for {name}" for error in errors) for name, errors in serializer.errors.items())
                     )
             
             except ObjectDoesNotExist:
