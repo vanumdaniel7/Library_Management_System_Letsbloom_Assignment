@@ -20,7 +20,7 @@ This project implements a simple RESTful API for managing a library system using
 2. After you cloned the repository go inside the project directory, and create a virtual environment.
    
    ```powershell
-   py -m env .venv
+   py -m venv .venv
    ```
    
 3. After this activate the virtual environment(the following command is only for windows).
