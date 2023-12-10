@@ -43,6 +43,19 @@ Please refer to Documentation.pdf for more details
    pip install -r requirements.txt
    ```
 
+7. Apply the migrations.
+   
+   ```bash
+   py manage.py migrate
+   ```
+
+8. Seed the database by using the following command.
+   
+    ```bash
+   py manage.py seed
+   ```
+   
+
 ### Running the Server
 
 1. Start the Django server.
