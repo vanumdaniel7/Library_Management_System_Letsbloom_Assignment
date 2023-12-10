@@ -48,7 +48,7 @@ def bookCreateReadAPIView(
                         "status": "success",
                         "info": "Book added successfully",
                         "data": serializer.data
-                    }, status = 200)
+                    }, status = 201)
                 
                 else:
                     # Raising an error if the request payload is invalid.
