@@ -53,12 +53,22 @@ This project implements a simple RESTful API for managing a library system using
 
 ### API Endpoints
 
-| Endpoint            | HTTP Method | CRUD Method | Result                | Payload                                      |
+| Endpoint            | HTTP Method | CRUD Method | Result                | Payload(request body)                        |
 | ------------------- | ----------- | ----------- | --------------------- | -------------------------------------------- |
 | `/api/books`        | GET         | READ        | Get all books         | No payload                                   |
-| `/api/books`        | POST        | CREATE      | Create a new book     | Refer documentation.pdf                      |
-| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | Refer documentation.pdf                      |
+| `/api/books`        | POST        | CREATE      | Create a new book     | createPayload                                |
+| `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | updatePayload                                |
 
+where updatePayload = ```javascript {
+    "title": "(str) - The title of the book, required",
+    "author": "(str) - The author of the book, required",
+    "edition": "(str) - The edition of the book, required",
+    "publication": "(str) - The publication name, required",
+    "publisher": "(str) - The publisher of the book, required",
+    "language": "(str) - The language of the book, required",
+    "publicationDate": "(str) - The publication date of the book (YYYY-MM-DD), required",
+    "numberOfCopies": "(int) - The number of copies available, required"
+}```
 
 ## Usage
 
