@@ -19,7 +19,7 @@ Please refer to Documentation.pdf for more details
    git clone https://github.com/vanumdaniel7/Library_Management_System_Letsbloom_Assignment
    ```
 
-2. After you cloned the repository go inside the project directory, and create a virtual environment. After creating a virtual environment, make sure to select the interpreter from VS Code's command palette.This step is crucial for VS Code to recognize and use the Python interpreter specific to your virtual environment, ensuring that your project runs in the isolated environment you've set up.
+2. After you cloned the repository go inside the project directory, and create a virtual environment. After creating a virtual environment, ensure to configure the selected interpreter within your integrated development environment (IDE) by navigating to the appropriate settings or preferences. This step is essential for the IDE to recognize and utilize the Python interpreter specific to your virtual environment, providing a controlled environment for your project.
    
    ```powershell
    py -m venv .venv
