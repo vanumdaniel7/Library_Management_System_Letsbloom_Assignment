@@ -45,7 +45,7 @@ This project implements a simple RESTful API for managing a library system using
 
 1. Start the Django server.
 
-   ```bash;
+   ```bash
    py manage.py runserver
    ```
 
@@ -59,7 +59,9 @@ This project implements a simple RESTful API for managing a library system using
 | `/api/books`        | POST        | CREATE      | Create a new book     | createPayload                                |
 | `/api/books/{id}`   | PUT         | UPDATE      | Update a movie        | updatePayload                                |
 
-where updatePayload = ```javascript {
+where updatePayload and createPayload are of the format
+```javascript 
+{
     "title": "(str) - The title of the book, required",
     "author": "(str) - The author of the book, required",
     "edition": "(str) - The edition of the book, required",
@@ -68,7 +70,8 @@ where updatePayload = ```javascript {
     "language": "(str) - The language of the book, required",
     "publicationDate": "(str) - The publication date of the book (YYYY-MM-DD), required",
     "numberOfCopies": "(int) - The number of copies available, required"
-}```
+}
+```
 
 ## Usage
 
