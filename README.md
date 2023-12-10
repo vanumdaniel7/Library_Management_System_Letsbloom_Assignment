@@ -23,33 +23,30 @@ This project implements a simple RESTful API for managing a library system using
    py -m env .venv
    ```
    
-3. After this activate the virtual environment.
+3. After this activate the virtual environment(the following command is only for windows).
    ```powershell
    .venv/Scripts/Activate.ps1
    ```
 
-5. Inside the `.env` file, set your MongoDB URI using a variable named `MONGODB_URL`. For example:
+4. Create a file named .env in the directory where the manage.py file is located.
+5. Inside the .env file, set your PostgreSQL URL using a variable named DATABASE_URL. For example:
 
    ```
-   MONGODB_URL=mongodb://username:password@your-mongodb-host:27017/your-database-name
+   DATABASE_URL=postgresql://username:password@host:port/database_name
    ```
 
 6. Install dependencies.
 
    ```bash
-   npm install
+   pip install -r requirements.txt
    ```
-
-### Configuration
-
-- Ensure MongoDB is running locally or use the MongoDB URI in the `.env` file for your database connection.
 
 ### Running the Server
 
-1. Start the Express server.
+1. Start the Django server.
 
-   ```bash
-   npm start
+   ```bash;
+   py manage.py runserver
    ```
 
 2. The server will start running on `http://localhost:8000` by default.
